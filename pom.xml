@@ -16,7 +16,6 @@
         <jackson.version>2.10.0</jackson.version>
         <webdrivermanager.version>5.0.2</webdrivermanager.version>
         <aspectj.version>1.9.8</aspectj.version>
-<!--        <allure.version>2.13.5</allure.version>-->
         <extent.version>5.0.8</extent.version>
         <faker.version>1.0.1</faker.version>
         <log4j.version>1.2.16</log4j.version>
@@ -123,12 +122,6 @@
             <version>${faker.version}</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>io.qameta.allure</groupId>-->
-<!--            <artifactId>allure-testng</artifactId>-->
-<!--            <version>${allure.version}</version>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
@@ -161,11 +154,6 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/runThemeforest.xml</suiteXmlFile>
                     </suiteXmlFiles>
-
-                    <!-- Argument -->
-<!--                    <argLine>-->
-<!--                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
-<!--                    </argLine>-->
                 </configuration>
             </plugin>
         </plugins>
