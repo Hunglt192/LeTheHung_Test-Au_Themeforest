@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On CHROME"
+           tests="3"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="23.585">
+  <properties />
+            <testcase name="Payment_02_Checkout_With_Wrong_Information" time="16.598" classname="payment.Payment_01">
+                <failure type="org.openqa.selenium.TimeoutException"
+                  message="Expected condition failed: waiting for visibility of all elements located by By.xpath: //input[@id=&apos;email&apos;]/parent::div/following-sibling::div (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NAUNEM&apos;, ip: &apos;172.22.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fa4747f6397010e14ed8cf3e5d7333c"
+              >
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //input[@id='email']/parent::div/following-sibling::div (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAUNEM', ip: '172.22.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fa4747f6397010e14ed8cf3e5d7333c
+  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+  commons.BasePage.waitForElementVisible(BasePage.java:448)
+  pageObjects.CheckoutPageObject.getErrorMessageAtEmailTextbox(CheckoutPageObject.java:15)
+  payment.Payment_01.Payment_02_Checkout_With_Wrong_Information(Payment_01.java:137)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="Payment_01_Add_Item_To_Cart" time="5.057" classname="payment.Payment_01" />
+                <testcase name="Payment_03_Checkout_Success" time="1.930" classname="payment.Payment_01" />
+      
+</testsuite>

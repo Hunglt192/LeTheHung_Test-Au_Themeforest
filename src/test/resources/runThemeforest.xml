@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce - User">
+
+	<listeners>
+		<listener class-name="reportConfig.ExtentTestListener" />
+	</listeners>
+
+	<test name="Run On CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="payment.Payment_01" />
+		</classes>
+	</test>
+</suite>
