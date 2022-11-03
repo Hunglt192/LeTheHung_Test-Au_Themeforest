@@ -25,7 +25,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void initBeforeSuite() {
-        //deleteAllureReport();
+        deleteAllureReport();
     }
 
     public BaseTest() {
