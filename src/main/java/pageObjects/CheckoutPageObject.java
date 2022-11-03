@@ -28,7 +28,6 @@ public class CheckoutPageObject extends BasePage {
 
 	public String getErrorMessageAtRecaptchaCheckbox(WebDriver driver) {
 		waitForElementVisible(driver, CheckoutPageUI.RECAPTCHA_ERROR_MESSAGE);
-		System.out.println("mess: "+getElementText(driver, CheckoutPageUI.RECAPTCHA_ERROR_MESSAGE));
 		return getElementText(driver, CheckoutPageUI.RECAPTCHA_ERROR_MESSAGE);
 	}
 
