@@ -3,8 +3,6 @@ package pageObjects;
 import commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import pageUIs.CartPageUI;
-import pageUIs.CategoryPageUI;
-import pageUIs.HomePageUI;
 
 public class CartPageObject extends BasePage {
 	private WebDriver driver;

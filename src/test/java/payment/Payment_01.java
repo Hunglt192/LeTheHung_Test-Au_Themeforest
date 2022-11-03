@@ -23,7 +23,7 @@ public class Payment_01 extends BaseTest {
         dataFaker = DataHelper.getDataHelper();
         firstName = dataFaker.getFirstName();
         lastName = dataFaker.getLastName();
-        email = dataFaker.getEmailAdress();
+        email = dataFaker.getEmailAddress();
         userName = dataFaker.getUserName();
         password = dataFaker.getPassword();
 

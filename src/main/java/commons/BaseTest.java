@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
@@ -25,6 +26,10 @@ public class BaseTest {
 
     @BeforeSuite
     public void initBeforeSuite() {
+        deleteAllureReport();
+    }
+    @AfterSuite
+    public void initAfterSuite() {
         deleteAllureReport();
     }
 
@@ -99,10 +104,9 @@ public class BaseTest {
         return this.driver;
     }
 
-
     public void deleteAllureReport() {
         try {
-            String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-json";
+            String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-results";
             File file = new File(pathFolderDownload);
             File[] listOfFiles = file.listFiles();
             for (int i = 0; i < listOfFiles.length; i++) {
